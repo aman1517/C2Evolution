@@ -74,7 +74,10 @@ const masterAccount= new mongoose.Schema({
 {
     versionKey:false,
     timestamps:true,
-}
+},
+// branchID:{
+//     type:mongoose.Schema.Type.ObjectId
+// }
 );
 const MasterAccount=new mongoose.model("MasterAccount",masterAccount)
 const savingsAccount= new mongoose.Schema({
